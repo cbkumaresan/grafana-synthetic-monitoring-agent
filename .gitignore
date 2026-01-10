@@ -1,0 +1,19 @@
+# Terraform files  
+*.tfstate  
+*.tfstate.*  
+.terraform/  
+.terraform.lock.hcl  
+crash.log  
+override.tf  
+override.tf.json  
+*_override.tf  
+*_override.tf.json  
+
+# Environment files (if they contain secrets)  
+environments/dev.tfvars  
+environments/staging.tfvars  
+environments/prod.tfvars  
+
+# Backup files  
+*.backup  
+*.bak  
