@@ -150,4 +150,66 @@ Recovery is managed internally, ensuring that services are safely restored with 
 
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+4) Response Plan for Network Outage – Grafana Cloud
+📌 Overview
+
+Grafana Cloud is designed with a distributed and highly available architecture to handle network-related disruptions. It leverages backend systems such as Grafana Mimir, Grafana Loki, and Grafana Tempo, which ensure service continuity through replication, load distribution, and fault-tolerant operations.
+
+📎 References
+Grafana Cloud documentation
+https://grafana.com/docs/grafana-cloud/
+Grafana Cloud SLA
+https://grafana.com/legal/grafana-cloud-sla/
+🔍 Detection Measures
+
+Grafana Cloud continuously monitors network connectivity, service availability, and request performance using internal health checks and monitoring systems.
+
+Detection includes:
+
+Monitoring request latency and timeouts
+Identifying connectivity issues between services
+Detecting API or query failures due to network disruptions
+
+Additionally, the Grafana Status Page
+https://status.grafana.com/
+ provides:
+
+Real-time incident updates
+Notifications of service degradation or outages
+Visibility into network-related disruptions
+🔄 Failover Strategy (Grafana Managed)
+
+In the event of a network outage, Grafana Cloud leverages its distributed architecture to maintain service availability.
+
+Key capabilities include:
+
+Load balancing across multiple service endpoints
+Routing requests to healthy and reachable components
+Isolation of affected network paths
+
+These mechanisms ensure that service requests are handled by available infrastructure, minimizing the impact of network failures.
+
+🔁 Failback Strategy (Grafana Managed)
+
+Once the network issue is resolved, Grafana Cloud automatically restores normal operations.
+
+This includes:
+
+Re-establishing connectivity between services
+Rebalancing traffic across all service instances
+Returning to standard routing behavior
+
+Failback is automatic and transparent, ensuring full service restoration without manual intervention.
+
+
+
+
+
+
+
 
