@@ -207,6 +207,64 @@ Returning to standard routing behavior
 Failback is automatic and transparent, ensuring full service restoration without manual intervention.
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Response Plan for Server / Infrastructure Failure – Grafana Cloud:
+
+
+
+📌 Overview
+
+Grafana Cloud is built on a distributed and fault-tolerant architecture designed to handle server and infrastructure failures. It utilizes backend systems such as Grafana Mimir, Grafana Loki, and Grafana Tempo, which ensure high availability through replication, load balancing, and redundancy across infrastructure components.
+
+📎 References
+Grafana Cloud documentation
+https://grafana.com/docs/grafana-cloud/
+Grafana Cloud SLA
+https://grafana.com/legal/grafana-cloud-sla/
+🔍 Detection Measures
+
+Grafana Cloud continuously monitors infrastructure health, system performance, and service availability using internal monitoring and alerting systems.
+
+Detection includes:
+
+Monitoring node and service health
+Identifying hardware or instance failures
+Detecting degraded performance or service interruptions
+
+Additionally, the Grafana Status Page
+https://status.grafana.com/
+ provides:
+
+Real-time updates on infrastructure-related incidents
+Notifications of outages or degraded services
+Visibility into ongoing maintenance activities
+🔄 Failover Strategy (Grafana Managed)
+
+In the event of server or infrastructure failure, Grafana Cloud automatically performs failover using its distributed architecture.
+
+Key capabilities include:
+
+Load balancing across multiple service instances
+Replication of data across nodes to prevent data loss
+Automatic rerouting of traffic to healthy infrastructure components
+
+These mechanisms ensure continued service availability with minimal disruption.
+
+🔁 Failback Strategy (Grafana Managed)
+
+After the failed infrastructure components are restored, Grafana Cloud automatically performs failback operations.
+
+This includes:
+
+Reintegration of recovered nodes into the system
+Rebalancing workloads across infrastructure
+Restoring normal service distribution
+
+Failback is seamless and transparent, ensuring services return to normal operation without manual intervention.
+
+
 
 
 
