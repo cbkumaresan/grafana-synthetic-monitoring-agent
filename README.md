@@ -44,3 +44,26 @@ https://grafana.com/docs/tempo/latest/
 
 Grafana Cloud provides a publicly accessible Grafana Status Page (https://status.grafana.com/
 ) that serves as the primary external mechanism for identifying service disruptions and regional issues. The status page delivers real-time visibility into platform health, including ongoing incidents, service degradation, and scheduled maintenance events across Grafana Cloud components. It is continuously updated by Grafana’s internal monitoring and alerting systems, enabling customers to quickly detect anomalies such as ingestion delays, query performance degradation, or partial outages. This ensures timely awareness and supports incident response by providing authoritative, vendor-managed confirmation of platform-level issues.
+
+
+**Failover:** 
+ Grafana Cloud provides built-in failover capabilities by automatically distributing workloads across service instances and replicating data across nodes. In the event of component or zone failures, the platform seamlessly performs automatic failover and leverages distributed query execution to maintain service availability without manual intervention.
+
+ References
+Grafana Cloud documentation
+https://grafana.com/docs/grafana-cloud/
+Grafana Mimir
+https://grafana.com/docs/mimir/latest/
+
+(Distributed, horizontally scalable architecture with replication and fault tolerance)
+Grafana Loki
+https://grafana.com/docs/loki/latest/
+
+(Replication, distributed ingestion, and query capabilities)
+
+**Failback Strategy (Grafana Managed)**
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
