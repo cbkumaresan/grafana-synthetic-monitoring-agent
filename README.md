@@ -83,4 +83,71 @@ Failover Strategy
 
 Grafana Cloud ensures continuity during data corruption risks or partial storage failures by leveraging its distributed architecture with replicated data across multiple nodes and durable storage systems. It automatically fails over to healthy components, ensuring unaffected data remains accessible and queries continue with minimal disruption.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Response Plan for Security Incident – Grafana Cloud**
+
+
+**Overview**
+
+Grafana Cloud is designed with strong security controls to protect customer data, ensuring confidentiality, integrity, and availability. The platform leverages secure, multi-tenant architectures and follows industry-standard security practices to detect, prevent, and respond to security incidents.
+
+
+
+SLA / Security Reference
+Grafana Cloud documentation
+https://grafana.com/docs/grafana-cloud/
+Grafana Labs Security & Compliance
+https://grafana.com/security/
+
+
+
+**Detection Measures**
+
+Grafana Cloud continuously monitors its infrastructure and services using internal security monitoring systems.
+
+Detection includes:
+
+Monitoring for unauthorized access attempts
+Detection of anomalous system behavior
+Continuous security logging and auditing
+
+Additionally, the Grafana Status Page
+https://status.grafana.com/
+ provides:
+
+Real-time updates on security-related incidents
+Notifications of service disruptions caused by security events
+
+
+
+**Failover**
+
+
+In the event of a security incident, Grafana Cloud implements automated mitigation and containment measures to protect the platform.
+
+Key capabilities include:
+
+Isolation of affected components or services
+Traffic redirection to unaffected infrastructure
+Enforcement of access controls and security policies
+
+These mechanisms help maintain service availability while minimizing the impact of the incident.
+
+**Resolution:**
+
+
+Following containment, Grafana Cloud performs recovery actions to restore normal operations.
+
+This includes:
+
+Remediation of vulnerabilities
+Restoration of affected services
+Validation of system integrity and security posture
+
+Recovery is managed internally, ensuring that services are safely restored with minimal disruption to customers.
+
+
+
+
 
