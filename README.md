@@ -66,4 +66,21 @@ https://grafana.com/docs/loki/latest/
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Response Plan for Data Corruption or Loss – Grafana Cloud
+-------------------------------------------------------------
+
+Grafana Cloud is a highly available and resilient observability platform built on distributed systems such as Grafana Mimir, Grafana Loki, and Grafana Tempo. These components use replication across nodes, durable object storage, and fault-tolerant ingestion and querying to minimize risks of data corruption or loss. This architecture ensures data remains.
+
+
+
+Detection Strategies:
+
+Grafana Cloud detects data corruption or loss through continuous monitoring of ingestion, storage integrity, and query performance using internal health checks and validation mechanisms. Potential issues are identified via ingestion anomalies, data inconsistencies, and backend storage or replication errors, while the Grafana Status Page (https://status.grafana.com/
+) provides real-time visibility into incidents, service degradation, and data-related disruptions.
+
+
+Failover Strategy
+
+Grafana Cloud ensures continuity during data corruption risks or partial storage failures by leveraging its distributed architecture with replicated data across multiple nodes and durable storage systems. It automatically fails over to healthy components, ensuring unaffected data remains accessible and queries continue with minimal disruption.
+
 
